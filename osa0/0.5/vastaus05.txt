@@ -1,0 +1,23 @@
+title 0.5: Single Page App
+
+note left of Selain: Selain pyytää sivua spa
+Selain->Palvelin: HTTP GET spa
+note right of Palvelin: Palvelin luo HTML-sivun ja lähettää sen
+Palvelin-->Selain: HTML
+note left of Selain: Selain näyttää HTML-sivun     
+note left of Selain: Selain pyytää CSS-tiedoston
+Selain->Palvelin: HTTP GET main.css
+Palvelin-->Selain: main.css
+note left of Selain: Selain muotoilee HTML-sivun CSS-tiedoston sääntöjen mukaan
+note left of Selain: Selain pyytää JavaScript-tiedoston
+Selain->Palvelin: HTTP GET spa.js
+Palvelin-->Selain: spa.js
+note left of Selain: Selain suorittaa JS-tiedoston joka pyytää hakemaan JSON-tiedoston 
+note left of Selain: Selain pyytää JSON-tiedoston 
+Selain->Palvelin: HTTP GET data.json
+note right of Palvelin: Palvelin luo JSON-tiedoston muistiinpanoista
+Palvelin-->Selain: data.json
+note left of Selain: JavaScript parsii JSON-tiedoston ja renderöi muistiinpanot   
+note left of Selain: Selain pyytää Faviconin    
+Selain->Palvelin: HTTP GET favicon.ico
+Palvelin-->Selain: favicon.ico
