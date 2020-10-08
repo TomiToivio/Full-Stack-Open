@@ -11,9 +11,25 @@
 <script src="https://unpkg.com/react@15.4.2/dist/react.js"></script>
 <script src="https://unpkg.com/react-dom@15.4.2/dist/react-dom.js"></script>
 <script>
-var test = React.createElement("h1", {id: "recipe-0", 'data-type': "title"}, "Testi")
-ReactDOM.render(test, document.getElementById('react-container'))
-console.log("Test")
+var items = [
+    "Corona",
+    "HIV",
+    "Ebola",
+    "Smallbox",
+    "Bubonic plague",
+    "Syphilis"
+]
+
+var list = React.DOM.ul(
+    { className: "diseases" },
+        items.map((disease, key) => React.DOM.li({key}, disease)
+    )
+)
+
+ReactDOM.render(
+    list,
+    document.getElementById('react-container')
+)
 </script>
 </body>
 </html>
