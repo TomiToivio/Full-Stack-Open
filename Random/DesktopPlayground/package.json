@@ -1,0 +1,14 @@
+{
+  "name": "desktopplayground",
+  "version": "1.0.0",
+  "description": "Electron playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "Tomi Toivio",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^10.1.3"
+  }
+}
