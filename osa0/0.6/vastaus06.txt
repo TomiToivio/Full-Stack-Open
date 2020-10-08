@@ -1,0 +1,6 @@
+title 0.6: Uusi muistiinpano
+
+note left of Selain: Käyttäjä kirjoittaa muistiinpanon ja painaa Save-nappia
+note left of Selain: JavaScript lisää uuden muistiinpanon HTML-sivulle ja lähettää sen palvelimelle
+Selain->Palvelin: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note right of Palvelin: Palvelin tallentaa uuden muistiinpanon
