@@ -13,9 +13,8 @@ const App = () => {
   return (
     <div>
       <h1>Greetings</h1>
-      <Hello />
-      <Hello />
-      <Hello />
+      <Hello name="Maya" />
+      <Hello name="Pekka" />
     </div>
   )
 }
