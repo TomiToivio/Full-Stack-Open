@@ -1,1 +1,0 @@
-Iloisen opiskelijan leikkikenttä!
